@@ -42,7 +42,7 @@
 .btn:first-child:active,
 :not(.btn-check) + .btn:active {
     border: 1px solid #335686;
-    background-color: #335686;
+    background-color: transparent;
 }
 
 .btn-primary {
@@ -53,6 +53,16 @@
 .btn-primary:hover {
     border: 1px solid #4b76b0;
     background-color: #4b76b0;
+}
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: var(--bs-btn-close-focus-opacity);
+}
+
+.btn-close:hover {
+    opacity: 1 !important;
 }
 
 .collapsing {
