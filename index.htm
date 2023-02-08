@@ -34,7 +34,8 @@
     </div>
     <div class="container-fluid navigation fixed-top bg-blue">
         <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between padding-y-1">
+            <header id="header"
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between padding-y-1">
                 <a class="text-light ig-logo" href="https://www.instagram.com/s.renovation_/" target="_blank">
                     <i class="fa-brands fa-instagram fa-xl"></i>
                 </a>
@@ -56,7 +57,56 @@
                     <a href="signin.htm" class="btn btn-outline-primary me-2 signin main-border-radius">Войти</a>
                     <a href="signup.htm" class="btn btn-primary signup main-border-radius">Зарегистрироваться</a>
                 </div>
-                <a id="offcanvas-btn" class="btn" data-bs-toggle="offcanvas" href="#offcanvas" role="button"aria-controls="offcanvasExample" style="width:50px; padding-right: 0;">
+                <a href="#" class="d-flex align-items-center justify-content-center link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="static/images/client-1.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3 no-border" aria-labelledby="profileDropdown">
+                    <!-- Profile info -->
+                    <li class="px-3 mb-3">
+                        <div class="d-flex align-items-center">
+                            <!-- Avatar -->
+                            <div class="avatar me-3">
+                                <img class="avatar-img rounded-circle" src="static/images/client-1.jpg" alt="avatar" style="width:inherit;">
+                            </div>
+                            <div>
+                                <a class="h6 mt-2 mt-sm-0" href="#">Жарас</a>
+                                <p class="small m-0">example@gmail.com</p>
+                            </div>
+                        </div>
+                    </li>
+                        <hr class="dropdown-divider">
+                    <!-- Links -->
+                    <li><a class="dropdown-item" href="userProfile.htm">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                    <li><a class="dropdown-item" href="#">Заявки</a></li>
+                    <li><a class="dropdown-item bg-danger-soft-hover" href="#">Выйти</a></li>
+                </ul>
+                <a href="#" class="d-flex align-items-center justify-content-center link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="static/images/client-3.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3 no-border" aria-labelledby="profileDropdown">
+                    <!-- Profile info -->
+                    <li class="px-3 mb-3">
+                        <div class="d-flex align-items-center">
+                            <!-- Avatar -->
+                            <div class="avatar me-3">
+                                <img class="avatar-img rounded-circle" src="static/images/client-3.jpg" alt="avatar" style="width:inherit;">
+                            </div>
+                            <div>
+                                <a class="h6 mt-2 mt-sm-0" href="#">Алия</a>
+                                <p class="small m-0">example@gmail.com</p>
+                            </div>
+                        </div>
+                    </li>
+                        <hr class="dropdown-divider">
+                    <!-- Links -->
+                    <li><a class="dropdown-item" href="userProfile.htm">Админ панель</a></li>
+                    <li><a class="dropdown-item" href="admin/customers.htm">Клиенты</a></li>
+                    <li><a class="dropdown-item" href="#">Заявки</a></li>
+                    <li><a class="dropdown-item bg-danger-soft-hover" href="#">Выйти</a></li>
+                </ul>
+                <a id="offcanvas-btn" class="btn" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                    aria-controls="offcanvasExample" style="width:50px; padding-right: 0;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 643.91" style="max-width: 25px;">
                         <defs>
                             <style>
@@ -97,29 +147,19 @@
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li class="nav-item">
-                            <a href="index.htm" class="nav-link active bg-blue main-border-radius" aria-current="page" t>
-                                Главная
-                            </a>
+                            <a href="index.htm" class="nav-link active bg-blue main-border-radius" aria-current="page">Главная</a>
                         </li>
                         <li>
-                            <a href="index.htm#gallery" class="nav-link link-dark main-border-radius">
-                                Работы
-                            </a>
+                            <a href="index.htm#gallery" class="nav-link link-dark main-border-radius">Работы</a>
                         </li>
                         <li>
-                            <a href="index.htm#prices" class="nav-link link-dark main-border-radius">
-                                Цены
-                            </a>
+                            <a href="index.htm#prices" class="nav-link link-dark main-border-radius">Цены</a>
                         </li>
                         <li>
-                            <a href="index.htm#contact" class="nav-link link-dark main-border-radius">
-                                Контакты
-                            </a>
+                            <a href="index.htm#contact" class="nav-link link-dark main-border-radius">Контакты</a>
                         </li>
                         <li>
-                            <a href="index.htm#advantages" class="nav-link link-dark main-border-radius">
-                                Преимущества
-                            </a>
+                            <a href="index.htm#advantages" class="nav-link link-dark main-border-radius">Преимущества</a>
                         </li>
                     </ul>
                     <div class="d-flex text-end mb-3 justify-content-between">
@@ -130,23 +170,6 @@
             </header>
         </div>
     </div>
-
-    <!--<div class="container-fluid padding-y-5 d-flex pos-relative align-center" style="height: 90vh">
-        <div class="hero-bg-img"></div>
-        <div class="container pos-relative m-top px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">    
-                <div class="hero-section shadow-lg col-lg-7">
-                    <h1 class="hero-title fnt-fam-montserrat display-5 fw-bold lh-1 mb-3">Ремонт квартир с гарантией - 1 год
-                    </h1>
-                    <p class="tagline lead">Чистовая отделка от SENSATA GROUP</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 i-btn mt-4 mb-4">Рассчитать
-                            стоимость</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
     <div class="container pos-relative m-top col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div id="hero-image" class="col-10 col-sm-8 col-lg-7" width="700" height="500">
@@ -158,7 +181,8 @@
                 </h1>
                 <p class="tagline lead">Чистовая отделка от SENSATA GROUP</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="index.htm#contact" class="btn btn-primary btn-lg px-4 me-md-2 i-btn mt-4 mb-4 main-border-radius">Рассчитать
+                    <a href="index.htm#contact"
+                        class="btn btn-primary btn-lg px-4 me-md-2 i-btn mt-4 mb-4 main-border-radius">Рассчитать
                         стоимость</a>
                 </div>
             </div>
@@ -256,7 +280,7 @@
         <div class="section">
             <div class="section-title-container">
                 <h1 class="section-title">Пакеты</h1>
-                <p class="section-text fs-5 text-muted">Мы выполняем 2 основных типа ремонтных работ. Все материалы,
+                <p class="section-text fs-5 text-muted fnt">Мы выполняем 2 основных типа ремонтных работ. Все материалы,
                     строительство и уборка входят в стоимость. Выберите подходящий.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3 text-center content-center">
@@ -292,7 +316,7 @@
                         </div>
                         <div class="p-card-body px-5 my-5">
                             <h1 class="fnt-fam-nunito mb-5">115 000 тг<small class="fw-light">/м²</small></h1>
-                            <ul class="p-card-body-list">
+                            <ul class="p-card-body-list fnt-fam-montserrat">
                                 <li>Ламинат 33 класс, 8 мм - <strong>Kronostar, Kastamonu</strong></li>
                                 <li>Плинтус 10 см / Молдинги полиуретан</li>
                                 <li>Двери с эмалью - <strong>VellDoris / Dveriline / Zadoor</strong> (Россия)</li>
@@ -321,10 +345,10 @@
                         </div>
                         <div class="p-card-body px-5 my-5">
                             <h1 class="fnt-fam-nunito my-2">+3 000 тг<small class="text-muted fw-light">/м²</small></h1>
-                            <p>Адаптация Рабочего проекта под Вашу планировку</p>
+                            <p class="fnt-fam-montserrat">Адаптация Рабочего проекта под Вашу планировку</p>
                             <h1 class="fnt-fam-nunito mt-5 mb-2">+2 000 тг<small class="text-muted fw-light">/м²</small>
                             </h1>
-                            <p>Вся сантехника только бренда Grohe</p>
+                            <p class="fnt-fam-montserrat">Вся сантехника только бренда Grohe</p>
                         </div>
                     </div>
                 </div>
@@ -528,7 +552,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary px-4 me-md-2 i-btn mt-3 main-border-radius">Отправить заявку</button>
+                                        <button type="submit"
+                                            class="btn btn-primary px-4 me-md-2 i-btn mt-3 main-border-radius">Отправить
+                                            заявку</button>
                                     </div>
                                 </div>
                             </div>
@@ -551,14 +577,12 @@
                     <div class="accordion" id="accordionRental">
                         <div class="accordion-item mb-3 no-border">
                             <h5 class="accordion-header" id="headingOne">
-                                <button
-                                    class="font-size-2 accordion-button border-bottom font-weight-bold fnt-fam-nunito"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                                <button 
+                                    class="font-size-2 accordion-button border-bottom-white font-weight-bold fnt-fam-nunito collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     Сколько стоит вызов замерщика?
                                 </button>
                             </h5>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                                 <div class="font-size-1 accordion-body text-sm opacity-8 fnt-fam-nunito">
                                     Эта бесплатная услуга
                                 </div>
@@ -567,9 +591,7 @@
                         <div class="accordion-item mb-3 no-border">
                             <h5 class="accordion-header" id="headingTwo">
                                 <button
-                                    class="font-size-2 accordion-button border-bottom font-weight-bold fnt-fam-nunito"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    class="font-size-2 accordion-button border-bottom-white font-weight-bold fnt-fam-nunito collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Может ли заказчик сам предоставить материалы?
                                 </button>
                             </h5>
@@ -583,9 +605,7 @@
                         <div class="accordion-item mb-3 no-border">
                             <h5 class="accordion-header" id="headingThree">
                                 <button
-                                    class="font-size-2 accordion-button border-bottom font-weight-bold fnt-fam-nunito"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
+                                    class="font-size-2 accordion-button border-bottom-white font-weight-bold fnt-fam-nunito collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Сколько времени длится ремонт?
                                 </button>
                             </h5>

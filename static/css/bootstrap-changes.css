@@ -66,6 +66,11 @@
   transition: 0.35s ease;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #fff;
+  background-color: #335686;
+}
+
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: none;
